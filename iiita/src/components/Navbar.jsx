@@ -34,7 +34,7 @@ function Navbar() {
           
           <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
             <a
-              href="#"
+              href="/#"
               className="hover:text-blue-900 transition"
             >
               Home
