@@ -30,14 +30,23 @@ function Hero() {
 
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-5">
-            
-            <button className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-2xl transition shadow-lg">
-              Apply Now
-            </button>
 
-            <button className="border border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-2xl transition">
+            {/* Apply Button */}
+            <a
+              href="/#apply"
+              className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-2xl transition shadow-lg"
+            >
+              Apply Now
+            </a>
+
+            {/* Explore Programs Button */}
+            <a
+              href="/#programs"
+              className="border border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-2xl transition"
+            >
               Explore Programs
-            </button>
+            </a>
+
           </div>
         </motion.div>
 
@@ -51,7 +60,7 @@ function Hero() {
           <div className="absolute inset-0 bg-blue-300 blur-3xl opacity-20 rounded-full"></div>
 
           <img
-            src="https://images.shiksha.com/mediadata/images/1537787675php8JA4wH.jpeg"
+            src="/dept1.jpg"
             alt="IIITA Campus"
             className="relative rounded-3xl shadow-2xl w-full object-cover"
           />

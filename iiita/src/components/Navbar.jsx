@@ -33,23 +33,41 @@ function Navbar() {
 
           
           <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-            <a href="#" className="hover:text-blue-900 transition">
+            <a
+              href="#"
+              className="hover:text-blue-900 transition"
+            >
               Home
             </a>
 
-            <a href="#programs" className="hover:text-blue-900 transition">
+            <a
+              href="/#programs"
+              className="hover:text-blue-900 transition"
+            >
               Programs
             </a>
 
+            <a
+              href="/faculty"
+              className="hover:text-blue-900 transition"
+            >
+              Faculty Details
+            </a>
 
-            <a href="#dates" className="hover:text-blue-900 transition">
+            <a
+              href="/#dates"
+              className="hover:text-blue-900 transition"
+            >
               Dates
             </a>
 
-            <button className="bg-blue-900 hover:bg-blue-800 text-white px-5 py-2 rounded-xl transition">
+            <a
+              href="/#apply"
+              className="bg-blue-900 hover:bg-blue-800 text-white px-5 py-2 rounded-xl transition"
+            >
               Apply Now
-            </button>
-          </div>
+            </a>
+          </div>  
 
           {/* Mobile Menu Button */}
           <button
@@ -64,12 +82,21 @@ function Navbar() {
         {isOpen && (
           <div className="md:hidden pb-6 flex flex-col gap-4 text-gray-700 font-medium">
             <a href="#">Home</a>
-            <a href="#programs">Programs</a>
-            <a href="#dates">Dates</a>
-
-            <button className="bg-blue-900 text-white py-3 rounded-xl">
+            <a href="#programs">
+              Programs
+            </a>
+            <a href="/faculty">
+              Faculty Details
+            </a>
+            <a href="#dates">
+              Dates
+            </a>
+            <a
+              href="#apply"
+              className="bg-blue-900 text-white py-3 rounded-xl text-center"
+            >
               Apply Now
-            </button>
+            </a>
           </div>
         )}
       </div>

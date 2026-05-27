@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import SectionTitle from "../components/SectionTitle"
+import { Link } from "react-router-dom"
 
 const steps = [
   {
@@ -85,14 +86,23 @@ function HowToApply() {
                     </p>
 
                     {step.button && (
-                      <a
-                        href={step.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition"
-                      >
-                        {step.button}
-                      </a>
+                      step.button === "Faculty Details" ? (
+                        <Link
+                          to="/faculty"
+                          className="inline-block mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition"
+                        >
+                          {step.button}
+                        </Link>
+                      ) : (
+                        <a
+                          href={step.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition"
+                        >
+                          {step.button}
+                        </a>
+                      )
                     )}
 
                   </div>
