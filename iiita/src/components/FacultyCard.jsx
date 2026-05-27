@@ -32,13 +32,15 @@ function FacultyCard({ faculty }) {
         {faculty.name}
       </h2>
 
-      {/* Details */}
-      <div className="mt-6 space-y-4 text-center text-gray-600 leading-relaxed">
+      <div className="flex flex-wrap gap-2 mt-4">
 
-        {faculty.details.map((detail, index) => (
-          <p key={index}>
-            {detail}
-          </p>
+        {faculty.researchInterests.map((item, index) => (
+          <span
+            key={index}
+            className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm"
+          >
+            {item}
+          </span>
         ))}
 
       </div>

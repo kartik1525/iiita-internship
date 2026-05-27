@@ -4,10 +4,11 @@ const facultyData = [
     image: "/faculty/sonali.jpg",
     name: "Prof. Sonali Agarwal",
 
-    details: [
-      "Head, Centre for Intelligent Robotics (CIR)",
-      "Professor-In-Charge, Students’ Holistic Growth",
-      "General Chair: ISEC 2023 | ICONIP 2022",
+    researchInterests: [
+      "Data Mining",
+      "Machine Learning",
+      "Big Data Analytics",
+      "Healthcare Analytics",
     ],
 
     email: "sonali@iiita.ac.in",
