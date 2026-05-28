@@ -65,10 +65,9 @@ function HowToApply() {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="border border-gray-100 rounded-2xl p-6 hover:shadow-md transition duration-300"
+                className="border border-gray-100 rounded-2xl p-5 sm:p-6 hover:shadow-md transition duration-300"
               >
-                <div className="flex items-start gap-5">
-
+                <div className="flex flex-col sm:flex-row items-start gap-5">
                   {/* Number */}
                   <div className="min-w-[55px] h-[55px] rounded-full bg-blue-900 text-white flex items-center justify-center text-lg font-bold">
                     {index + 1}
@@ -77,7 +76,7 @@ function HowToApply() {
                   {/* Content */}
                   <div className="flex-1">
 
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
                       {step.title}
                     </h3>
 
@@ -89,7 +88,7 @@ function HowToApply() {
                       step.button === "Faculty Details" ? (
                         <Link
                           to="/faculty"
-                          className="inline-block mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition"
+                          className="inline-flex justify-center items-center mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition w-full sm:w-fit"
                         >
                           {step.button}
                         </Link>
@@ -98,7 +97,7 @@ function HowToApply() {
                           href={step.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition"
+                          className="inline-flex justify-center items-center mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition w-full sm:w-fit"
                         >
                           {step.button}
                         </a>

@@ -82,17 +82,17 @@ function Navbar() {
         {isOpen && (
           <div className="md:hidden pb-6 flex flex-col gap-4 text-gray-700 font-medium">
             <a href="#">Home</a>
-            <a href="#programs">
+            <a href="/#programs">
               Programs
             </a>
             <a href="/faculty">
               Faculty Details
             </a>
-            <a href="#dates">
+            <a href="/#dates">
               Dates
             </a>
             <a
-              href="#apply"
+              href="/#apply"
               className="bg-blue-900 text-white py-3 rounded-xl text-center"
             >
               Apply Now

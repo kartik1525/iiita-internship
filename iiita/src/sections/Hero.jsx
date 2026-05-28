@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 function Hero() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center pt-28">
+    <section className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center pt-36 lg:pt-28">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -11,12 +11,13 @@ function Hero() {
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="order-2 lg:order-1"
         >
           <p className="text-blue-900 font-semibold mb-4 tracking-wide uppercase">
             Indian Institute of Information Technology Allahabad
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             Internship & Credit Export Program 2026
           </h1>
 
@@ -55,7 +56,7 @@ function Hero() {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative"
+          className="relative order-1 lg:order-2"
         >
           <div className="absolute inset-0 bg-blue-300 blur-3xl opacity-20 rounded-full"></div>
 
