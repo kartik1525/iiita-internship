@@ -15,7 +15,7 @@ function FacultyCard({ faculty }) {
     >
       {/* Faculty Image */}
       <div className="flex justify-center">
-        <div className="p-1 rounded-full bg-gradient-to-r from-blue-700 to-purple-600">
+        <div className="p-1 rounded-full bg-gradient-to-r from-blue-700 to-blue-500">
           <img
             src={faculty.image}
             alt={faculty.name}
@@ -30,17 +30,26 @@ function FacultyCard({ faculty }) {
       </h2>
 
       {/* Research Interests */}
-      <div className="flex flex-wrap justify-center gap-2 mt-4 min-h-[90px]">
-        {faculty.researchInterests
-          .slice(0, 5)
-          .map((item, index) => (
-            <span
-              key={index}
-              className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm"
-            >
-              {item}
-            </span>
-          ))}
+      <div className="flex flex-wrap justify-center gap-2 mt-6 min-h-[80px] content-start">
+        {faculty.researchInterests.slice(0, 5).map((item, index) => (
+          <span
+            key={index}
+            className="
+              bg-blue-50
+              border
+              border-blue-200
+              text-blue-800
+              px-4
+              py-2
+              rounded-full
+              text-sm
+              font-medium
+              whitespace-nowrap
+            "
+          >
+            {item}
+          </span>
+        ))}
       </div>
 
       {/* Email */}

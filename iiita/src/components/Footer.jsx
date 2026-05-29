@@ -1,3 +1,4 @@
+import { Mail, Phone } from "lucide-react"
 function Footer() {
   return (
     <footer className="bg-blue-950 text-white pt-20 pb-10">
@@ -35,38 +36,79 @@ function Footer() {
                 In case of any queries, please contact the Office of
                 Internship and Credit Export Activities (ICEA), IIIT Allahabad.
               </p>
+              <div >
 
-              <div>
-                <p className="font-semibold text-white mb-2">
+                  <p className="font-semibold text-white mb-4">
+                    Faculty Incharge
+                  </p>
+
+                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+
+                    <span>
+                      Mrs. Sonali Agarwal
+                    </span>
+
+                    <a
+                      href="mailto:fi.icea@iiita.ac.in"
+                      className="flex items-center gap-2 hover:text-white transition underline underline-offset-4"
+                    >
+                      <Mail size={16} />
+                      fi.icea@iiita.ac.in
+                    </a>
+
+                  </div>
+              <div className="mt-6">
+                <p className="font-semibold text-white mb-4">
                   Contact Persons
                 </p>
 
-                <p>
-                  Mr. Ashok Tripathi: +91-6393891552
-                </p>
+                <div className="space-y-3">
 
-                <p>
-                  Mr. Pankaj Srivastava: +91-9935510884
-                </p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+                    <div className="flex items-center gap-2">
 
-                <p className="mt-2 text-sm text-blue-200">
-                  (10 AM to 6 PM)
-                </p>
+                      <span>
+                        Mr. Ashok Tripathi :
+                      </span>
+                      <Phone size={16} className="text-blue-300 flex-shrink-0" />
+                      <span>
+                        +91-6393891552
+                      </span>
+                    </div>
+
+                    <a
+                      href="mailto:support.iwcs@iiita.ac.in"
+                      className="flex items-center gap-2 hover:text-white transition underline underline-offset-4"
+                    >
+                      <Mail size={16} />
+                      support.iwcs@iiita.ac.in
+                    </a>
+                  </div>
+
+                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+                    <div className="flex items-center gap-2">
+                      <span>
+                        Mr. Pankaj Srivastava :
+                      </span>
+                      <Phone size={16} className="text-blue-300 flex-shrink-0" />
+                      <span>
+                        +91-9935510884
+                      </span>
+                    </div>
+
+                    <a
+                      href="mailto:pankajsrivastava@iiita.ac.in"
+                      className="flex items-center gap-2 hover:text-white transition underline underline-offset-4"
+                    >
+                      <Mail size={16} />
+                      pankajsrivastava@iiita.ac.in
+                    </a>
+                  </div>
+
+                </div>
+
+                </div>
               </div>
-
-              <div>
-                <p className="font-semibold text-white mb-2">
-                  Contact Email
-                </p>
-
-                <a
-                  href="mailto:support.iwcs@iiita.ac.in"
-                  className="hover:text-white transition underline underline-offset-4"
-                >
-                  support.iwcs@iiita.ac.in
-                </a>
-              </div>
-
             </div>
 
           </div>
