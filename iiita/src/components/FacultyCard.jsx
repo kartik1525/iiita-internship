@@ -9,68 +9,67 @@ function FacultyCard({ faculty }) {
       whileHover={{
         y: -8,
       }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.1 }}
       viewport={{ once: true }}
-      className="bg-[#f8f9fb] rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl border border-transparent hover:border-blue-900 transition duration-300"
+      className="bg-[#f8f9fb] rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl border border-transparent hover:border-blue-900 transition duration-300 flex flex-col h-full"
     >
-
       {/* Faculty Image */}
       <div className="flex justify-center">
-
         <div className="p-1 rounded-full bg-gradient-to-r from-blue-700 to-purple-600">
           <img
             src={faculty.image}
             alt={faculty.name}
-            className="w-40 h-40 rounded-full object-cover border-4 border-white"
+            className="w-36 h-36 rounded-full object-cover border-4 border-white"
           />
         </div>
-
       </div>
 
       {/* Name */}
-      <h2 className="text-2xl font-bold text-center text-[#071c46] mt-8 leading-snug">
+      <h2 className="text-2xl font-bold text-center text-[#071c46] mt-8 leading-snug min-h-[70px]">
         {faculty.name}
       </h2>
 
-      <div className="flex flex-wrap gap-2 mt-4">
-
-        {faculty.researchInterests.map((item, index) => (
-          <span
-            key={index}
-            className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm"
-          >
-            {item}
-          </span>
-        ))}
-
+      {/* Research Interests */}
+      <div className="flex flex-wrap justify-center gap-2 mt-4 min-h-[90px]">
+        {faculty.researchInterests
+          .slice(0, 5)
+          .map((item, index) => (
+            <span
+              key={index}
+              className="bg-blue-100 text-blue-900 px-3 py-1 rounded-full text-sm"
+            >
+              {item}
+            </span>
+          ))}
       </div>
 
       {/* Email */}
-      <div className="flex items-center justify-center gap-3 mt-8">
-
-        <Mail className="text-blue-700" size={20} />
+      <div className="flex items-center justify-center gap-3 mt-6">
+        <Mail
+          className="text-blue-700 flex-shrink-0"
+          size={20}
+        />
 
         <a
           href={`mailto:${faculty.email}`}
-          className="text-blue-800 font-semibold hover:underline break-all"
+          className="text-blue-800 font-semibold hover:underline text-sm break-all text-center"
         >
           {faculty.email}
         </a>
-
       </div>
 
-      {/* Homepage Button */}
-      <a
-        href={faculty.homepage}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-10 flex items-center justify-center gap-3 bg-blue-800 hover:bg-blue-900 text-white py-4 rounded-2xl transition duration-300 font-semibold"
-      >
-        <ExternalLink size={20} />
-
-        Personal Homepage
-      </a>
-
+      {/* Push button to bottom */}
+      <div className="mt-auto pt-8">
+        <a
+          href={faculty.homepage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-3 bg-blue-800 hover:bg-blue-900 text-white py-4 rounded-2xl transition duration-300 font-semibold"
+        >
+          <ExternalLink size={20} />
+          Personal Homepage
+        </a>
+      </div>
     </motion.div>
   )
 }
