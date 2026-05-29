@@ -1,7 +1,10 @@
 import { Mail, Phone } from "lucide-react"
 function Footer() {
   return (
-    <footer className="bg-blue-950 text-white pt-20 pb-10">
+    <footer
+      id="contact"
+      className="bg-blue-950 text-white pt-20 pb-10 scroll-mt-24"
+    >
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
@@ -42,17 +45,19 @@ function Footer() {
                     Faculty Incharge
                   </p>
 
-                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+                  <div className="flex flex-wrap gap-x-6 gap-y-2">
 
-                    <span>
-                      Mrs. Sonali Agarwal
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span>
+                        Mrs. Sonali Agarwal
+                      </span>
+                    </div>
 
                     <a
                       href="mailto:fi.icea@iiita.ac.in"
                       className="flex items-center gap-2 hover:text-white transition underline underline-offset-4"
                     >
-                      <Mail size={16} />
+                      <Mail size={16} className="text-blue-300" />
                       fi.icea@iiita.ac.in
                     </a>
 
@@ -80,7 +85,7 @@ function Footer() {
                       href="mailto:support.iwcs@iiita.ac.in"
                       className="flex items-center gap-2 hover:text-white transition underline underline-offset-4"
                     >
-                      <Mail size={16} />
+                      <Mail size={16} className="text-blue-300" />
                       support.iwcs@iiita.ac.in
                     </a>
                   </div>
@@ -100,7 +105,7 @@ function Footer() {
                       href="mailto:pankajsrivastava@iiita.ac.in"
                       className="flex items-center gap-2 hover:text-white transition underline underline-offset-4"
                     >
-                      <Mail size={16} />
+                      <Mail size={16} className="text-blue-300" />
                       pankajsrivastava@iiita.ac.in
                     </a>
                   </div>

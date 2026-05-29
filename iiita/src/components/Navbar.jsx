@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import { HashLink } from "react-router-hash-link"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,42 +32,57 @@ function Navbar() {
             </div>
           </div>
 
-          
+          {/* Navigation Links for Desktop */}
           <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-            <a
-              href="/#"
+
+            <HashLink
+              smooth
+              to="/#"
               className="hover:text-blue-900 transition"
             >
               Home
-            </a>
+            </HashLink>
 
-            <a
-              href="/#programs"
+            <HashLink
+              smooth
+              to="/#programs"
               className="hover:text-blue-900 transition"
             >
               Programs
-            </a>
+            </HashLink>
 
-            <a
-              href="/faculty"
+            <HashLink
+              smooth
+              to="/faculty"
               className="hover:text-blue-900 transition"
             >
               Faculty Details
-            </a>
+            </HashLink>
 
-            <a
-              href="/#dates"
+            <HashLink
+              smooth
+              to="/#dates"
               className="hover:text-blue-900 transition"
             >
               Dates
-            </a>
+            </HashLink>
 
-            <a
-              href="/#apply"
+            <HashLink
+              smooth
+              to="/#contact"
+              className="hover:text-blue-900 transition"
+            >
+              Contact
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="/#apply"
               className="bg-blue-900 hover:bg-blue-800 text-white px-5 py-2 rounded-xl transition"
             >
               Apply Now
-            </a>
+            </HashLink>
+
           </div>  
 
           {/* Mobile Menu Button */}
@@ -81,22 +97,35 @@ function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pb-6 flex flex-col gap-4 text-gray-700 font-medium">
-            <a href="#">Home</a>
-            <a href="/#programs">
+
+            <HashLink smooth to="/#" onClick={() => setIsOpen(false)}>
+              Home
+            </HashLink>
+
+            <HashLink smooth to="/#programs" onClick={() => setIsOpen(false)}>
               Programs
-            </a>
-            <a href="/faculty">
+            </HashLink>
+
+            <HashLink smooth to="/faculty" onClick={() => setIsOpen(false)}>
               Faculty Details
-            </a>
-            <a href="/#dates">
+            </HashLink>
+
+            <HashLink smooth to="/#dates" onClick={() => setIsOpen(false)}>
               Dates
-            </a>
-            <a
-              href="/#apply"
+            </HashLink>
+
+            <HashLink smooth to="/#contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="/#apply"
               className="bg-blue-900 text-white py-3 rounded-xl text-center"
             >
               Apply Now
-            </a>
+            </HashLink>
+
           </div>
         )}
       </div>

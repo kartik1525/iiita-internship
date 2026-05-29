@@ -477,7 +477,7 @@ const facultyData = [
       "Data Mining",
     ],
     email: "vrij@iiita.ac.in",
-    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=vrij",
+    homepage: "https://profile.iiita.ac.in/vrij/",
   },
 
   {
@@ -507,7 +507,7 @@ const facultyData = [
       "Wireless Sensor Networks"
     ],
     email: "manish@iiita.ac.in",
-    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=manish",
+    homepage: "https://profile.iiita.ac.in/manish/",
   },
 
   {
@@ -545,28 +545,30 @@ const facultyData = [
     id: 208,
     department: "IT",
     name: "Prof. Krishna Pratap Singh",
-    image: "/faculty/default.jpg",
+    image: "/faculty/kpsingh.jpg",
     researchInterests: [
-      "Artificial Intelligence",
-      "Computer Vision",
-      "Pattern Recognition",
+      "ML & DL",
+      "Transfer Learning",
+      "Natural Language Processing",
+      "Evolutionary Algorithms"
     ],
     email: "kpsingh@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://profile.iiita.ac.in/kpsingh/",
   },
 
   {
     id: 209,
     department: "IT",
     name: "Prof. S. Venkatesan",
-    image: "/faculty/default.jpg",
+    image: "/faculty/venkat.jpg",
     researchInterests: [
-      "Computer Networks",
-      "Network Security",
-      "IoT",
+      "Network & Information Security",
+      "Cloud Computing and Social Network Privacy",
+      "Mobile Agent Security",
+      "Blockchain"
     ],
     email: "venkat@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://profile.iiita.ac.in/venkat/",
   },
 
   {
@@ -575,40 +577,41 @@ const facultyData = [
     name: "Prof. Vijay Chaurasiya",
     image: "/faculty/vijayk.jpg",
     researchInterests: [
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Computer Vision",
+      "IoT Protocols and Applications",
+      "Wireless Networks",
+      "Wireless Sensor Networks",
+      "Computer Networks",
     ],
     email: "vijayk@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://profile.iiita.ac.in/vijayk/",
   },
 
   {
     id: 211,
     department: "IT",
     name: "Dr. Abhishek Vaish",
-    image: "/faculty/default.jpg",
+    image: "/faculty/abhishek.jpg",
     researchInterests: [
-      "Cloud Computing",
-      "Cyber Security",
-      "Blockchain",
+      "Information Security",
+      "Cyber Law",
+      "Risk Management",
+      "Network Threat Protection"
     ],
     email: "abhishek@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=abhishek",
   },
 
   {
     id: 212,
     department: "IT",
     name: "Dr. Triloki Pant",
-    image: "/faculty/default.jpg",
+    image: "/faculty/tpant.jpg",
     researchInterests: [
-      "Data Science",
-      "Machine Learning",
-      "Optimization",
+      "Satellite Image Analysis",
+      "Fractal Geometry for Imaging"
     ],
     email: "tpant@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=tpant",
   },
 
   {
@@ -617,54 +620,62 @@ const facultyData = [
     name: "Dr. Bibhas Ghoshal",
     image: "/faculty/bibhas.jpg",
     researchInterests: [
-      "Artificial Intelligence",
-      "Deep Learning",
-      "Data Analytics",
+      "Computer architecture",
+      "Computer networks",
+      "System software",
+      "Compilers",
+      "Artificial intelligence"
     ],
     email: "bibhas.ghoshal@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://profile.iiita.ac.in/bibhas.ghoshal/",
   },
 
   {
     id: 214,
     department: "IT",
     name: "Dr. Navjot Singh",
-    image: "/faculty/default.jpg",
+    image: "/faculty/navjot.jpg",
     researchInterests: [
-      "Cyber Security",
-      "Cryptography",
-      "Network Security",
+      "Salient Object Detection",
+      "Image Processing",
+      "Computer Vision",
+      "Machine Learning",
+      "Medical Imaging"
     ],
     email: "navjot@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://sites.google.com/iiita.ac.in/navjotsingh",
   },
 
   {
     id: 215,
     department: "IT",
     name: "Dr. Muneendra Ojha",
-    image: "/faculty/default.jpg",
+    image: "/faculty/muneendra.jpg",
     researchInterests: [
-      "Computer Vision",
-      "Image Processing",
       "Deep Learning",
+      "Machine Learning",
+      "Natural Language Processing",
+      "Video Analytics",
+      "Genetic Algorithms"
     ],
     email: "muneendra@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=muneendra",
   },
 
   {
     id: 216,
     department: "IT",
     name: "Dr. Shiv Ram Dubey",
-    image: "/faculty/default.jpg",
+    image: "/faculty/srdubey.jpg",
     researchInterests: [
       "Computer Vision",
       "Deep Learning",
-      "Pattern Recognition",
+      "Image Processing",
+      "Biometrics",
+      "Medical Imaging"
     ],
     email: "srdubey@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://profile.iiita.ac.in/srdubey/",
   },
 
   {
@@ -673,26 +684,29 @@ const facultyData = [
     name: "Dr. Mohammed Javed",
     image: "/faculty/javed.jpg",
     researchInterests: [
-      "Data Analytics",
-      "Machine Learning",
-      "Big Data",
+      "Image Processing",
+      "Pattern Recognition",
+      "Compressed Domain Processing and Analysis",
+      "Big Data Analytics"
     ],
     email: "javed@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://sites.google.com/site/mohammedjaved2016",
   },
 
   {
     id: 218,
     department: "IT",
     name: "Dr. Soumyadev Maity",
-    image: "/faculty/default.jpg",
+    image: "/faculty/smaity.jpg",
     researchInterests: [
-      "Natural Language Processing",
-      "AI",
-      "Machine Learning",
+      "Applied Cryptography",
+      "Zero-Knowledge Engineering",
+      "Blockchain",
+      "Quantum Cryptography",
+      "Software Security"
     ],
     email: "soumyadev@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://sites.google.com/view/soumyadevmaity",
   },
 
   {
@@ -701,40 +715,42 @@ const facultyData = [
     name: "Dr. Anshu S Anand",
     image: "/faculty/anshu.jpg",
     researchInterests: [
-      "Software Engineering",
-      "Cloud Computing",
-      "Distributed Systems",
+      "Parallel Computing",
+      "Distributed Computing",
+      "High Performance Computing (HPC)",
+      "Computational Science"
     ],
     email: "anshu@iiita.ac.in",
-    homepage: "#",
+    homepage: "#https://sites.google.com/view/anshusanand/",
   },
 
   {
     id: 220,
     department: "IT",
     name: "Dr. Nabajyoti Mazumdar",
-    image: "/faculty/default.jpg",
+    image: "/faculty/nabajyoti.jpg",
     researchInterests: [
-      "Cyber Security",
-      "Blockchain",
-      "Cryptography",
+      "Wireless sensor network",
+      "Internet of Things",
+      "Cloud Computing",
+      "Computer Networks"
     ],
     email: "nabajyoti@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://vidwan.inflibnet.ac.in/profile/184914",
   },
 
   {
     id: 221,
     department: "IT",
     name: "Dr. Ranjana Vyas",
-    image: "/faculty/default.jpg",
+    image: "/faculty/ranjana.jpg",
     researchInterests: [
-      "Human Computer Interaction",
-      "UX",
-      "Software Engineering",
+      "Business Intelligence",
+      "Data Mining",
+      "Information Systems Strategy"
     ],
     email: "ranjana@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=ranjana",
   },
 
   {
@@ -743,37 +759,39 @@ const facultyData = [
     name: "Dr. Anjali Gautam",
     image: "/faculty/anjali.jpg",
     researchInterests: [
-      "Machine Learning",
-      "Data Science",
-      "AI",
+      "Image Processing",
+      "Computer Vision",
+      "Medical Image Analysis",
+      "Deep Learning"
     ],
     email: "anjaligautam@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://anjaliiitr.github.io/index.html",
   },
 
   {
     id: 223,
     department: "IT",
     name: "Dr. KM Pooja",
-    image: "/faculty/default.jpg",
+    image: "/faculty/kmpooja.jpg",
     researchInterests: [
-      "Computer Vision",
-      "Image Analysis",
-      "Machine Learning",
+      "Information retrieval",
+      "Deep Learning",
+      "Author name disambiguation",
+      "Entity Linking"
     ],
     email: "kmpooja@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=kmpooja",
   },
 
   {
     id: 224,
     department: "IT",
     name: "Dr. Gaurav Srivastava",
-    image: "/faculty/default.jpg",
+    image: "/faculty/gauravs.jpg",
     researchInterests: [
-      "Cyber Security",
-      "Cloud Security",
-      "Blockchain",
+      "Engineering & Combinatorial Optimization",
+      "Vehicle Routing Problems",
+      "Swarm Intelligence Techniques"
     ],
     email: "gauravs@iiita.ac.in",
     homepage: "#",
@@ -783,28 +801,29 @@ const facultyData = [
     id: 225,
     department: "IT",
     name: "Dr. Naveen Saini",
-    image: "/faculty/default.jpg",
+    image: "/faculty/naveen.jpg",
     researchInterests: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Data Mining",
+      "Text Mining",
+      "Scholarly Data Mining",
+      "Information Retrieval",
+      "Multi-objective optimization"
     ],
     email: "nsaini@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://sites.google.com/view/nsaini",
   },
 
   {
     id: 226,
     department: "IT",
     name: "Dr. Randheer Bagi",
-    image: "/faculty/default.jpg",
+    image: "/faculty/randheer.jpg",
     researchInterests: [
-      "Software Engineering",
-      "Cloud Computing",
-      "DevOps",
+      "Deep Learning",
+      "Machine Learning",
+      "Data Science"
     ],
     email: "randheer@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=randheer",
   },
   // =======================
   // MANAGEMENT STUDIES FACULTY
