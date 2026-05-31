@@ -3,10 +3,10 @@ const facultyData = [
     id: 1,
     name: "Prof. Tapobrata Lahiri",
     department: "AS",
-    image: "/faculty/default.jpg",
-    researchInterests: ["Applied Mathematics", "Data Science", "Optimization"],
+    image: "/faculty/tapobrata.jpg",
+    researchInterests: ["Machine Learning", "Artificial Intelligence", "Optimization", "Systems Modelling and Simulation", "Fractal Dimensional Analysis"],
     email: "tlahiri@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://profile.iiita.ac.in/tlahiri/",
   },
   {
     id: 2,
