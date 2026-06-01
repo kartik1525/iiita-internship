@@ -77,13 +77,13 @@ function Programs() {
         </div>
 
         {/* Notes */}
-        <div className="mt-16 bg-blue-950 text-white rounded-3xl p-8 md:p-10">
+        <div className="mt-16 bg-blue-800 text-white rounded-3xl p-8 md:p-10">
 
-          <h3 className="text-2xl font-bold mb-6">
+          <h3 className="text-3xl font-bold mb-6">
             Important Notes
           </h3>
 
-          <p className="text-blue-100 leading-relaxed mb-6">
+          <p className="text-lg md:text-xl  leading-relaxed mb-6">
             For Programs A, B and C, the portal is open for registration and the
             program start and end dates shall be aligned with the{" "}
 
@@ -97,7 +97,7 @@ function Programs() {
             </a>.
           </p>
 
-          <p className="text-blue-100 leading-relaxed">
+          <p className="text-lg md:text-xl leading-relaxed">
             Program D: Summer (6–8 weeks) is a benchmark internship program of
             IIIT Allahabad and is scheduled to begin from{" "}
 
