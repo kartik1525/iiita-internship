@@ -69,7 +69,7 @@ function Navbar() {
 
             <HashLink
               smooth
-              to="/#contact"
+              to="#contact"
               className="hover:text-blue-900 transition"
             >
               Contact

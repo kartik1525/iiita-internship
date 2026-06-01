@@ -49,7 +49,7 @@ function Footer() {
 
                     <div className="flex items-center gap-2">
                       <span>
-                        Mrs. Sonali Agarwal
+                        Prof. Sonali Agarwal
                       </span>
                     </div>
 

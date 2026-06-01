@@ -15,7 +15,7 @@ const steps = [
     description:
       "After receiving consent from the prospective supervisor, students are required to register online along with the supervisor's consent.",
     button: "Application Form",
-    link: "<google-form-link>",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSegDPoIGlpwdCNy2shzP52Bqf4xJygqR7cSsgNn0kRTeQN_vg/viewform",
   },
   {
     title: "Registration Fee",

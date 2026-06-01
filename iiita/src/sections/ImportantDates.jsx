@@ -74,7 +74,7 @@ function ImportantDates() {
           <div className="mt-12 text-center">
 
             <a
-              href="<fee-pdf-link>"
+              href="/pdf/fee.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-2xl transition duration-300 shadow-lg"

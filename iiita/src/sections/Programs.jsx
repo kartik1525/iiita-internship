@@ -5,19 +5,19 @@ import SectionTitle from "../components/SectionTitle"
 const programs = [
   {
     title: "Course Internship (One Semester)",
-    link: "<link-to-pdf>",
+    link: "/pdf/A.pdf",
   },
   {
     title: "Research Internship / Project / Thesis",
-    link: "<link-to-pdf>",
+    link: "/pdf/B.pdf",
   },
   {
     title: "Student Exchange Program with SCES",
-    link: "<link-to-pdf>",
+    link: "/pdf/C.pdf",
   },
   {
     title: "Regular Internship (Summer/Winter)",
-    link: "<link-to-pdf>",
+    link: "/pdf/D.pdf",
   },
 ]
 
@@ -88,7 +88,7 @@ function Programs() {
             program start and end dates shall be aligned with the{" "}
 
             <a
-              href="<academic-calendar-pdf-link>"
+              href="/pdf/AC.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white font-semibold underline underline-offset-4 hover:text-blue-200 transition"
