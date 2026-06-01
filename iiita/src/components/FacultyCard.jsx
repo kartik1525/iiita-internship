@@ -11,45 +11,83 @@ function FacultyCard({ faculty }) {
       }}
       transition={{ duration: 0.1 }}
       viewport={{ once: true }}
-      className="bg-[#f8f9fb] rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl border border-transparent hover:border-blue-900 transition duration-300 flex flex-col h-full"
-    >
+      className="
+      bg-[#f8f9fb]
+      rounded-[2rem]
+      p-5 sm:p-6 md:p-8
+      w-full
+      shadow-sm
+      hover:shadow-xl
+      border
+      border-transparent
+      hover:border-blue-900
+      transition-all
+      duration-300
+      flex
+      flex-col
+      h-full
+      "
+      >
       {/* Faculty Image */}
       <div className="flex justify-center">
         <div className="p-1 rounded-full bg-gradient-to-r from-blue-700 to-blue-500">
           <img
             src={faculty.image}
             alt={faculty.name}
-            className="w-36 h-36 rounded-full object-cover border-4 border-white"
+            className="
+            w-28 h-28
+            sm:w-32 sm:h-32
+            md:w-36 md:h-36
+            rounded-full
+            object-cover
+            border-4
+            border-white
+            "
           />
         </div>
       </div>
 
       {/* Name */}
-      <h2 className="text-2xl font-bold text-center text-[#071c46] mt-8 leading-snug min-h-[70px]">
+      <h2 className="
+      text-xl
+      sm:text-2xl
+      font-bold
+      text-center
+      text-[#071c46]
+      mt-6
+      leading-snug
+      min-h-[70px]
+      flex
+      items-center
+      justify-center
+      "
+      >
         {faculty.name}
       </h2>
 
       {/* Research Interests */}
-      <div className="flex flex-wrap justify-center gap-2 mt-6 min-h-[80px] content-start">
-        {faculty.researchInterests.slice(0, 5).map((item, index) => (
-          <span
-            key={index}
-            className="
-              bg-blue-50
-              border
-              border-blue-200
-              text-blue-800
-              px-4
-              py-2
-              rounded-full
-              text-sm
-              font-medium
-              whitespace-nowrap
-            "
-          >
-            {item}
-          </span>
-        ))}
+      <div className="mt-6 min-h-[90px]">
+        <div className="flex flex-wrap justify-center gap-2">
+          {faculty.researchInterests.slice(0, 5).map((item, index) => (
+            <span
+              key={index}
+              className="
+                bg-blue-50
+                border
+                border-blue-200
+                text-blue-800
+                text-xs
+                sm:text-sm
+                px-3
+                py-2
+                rounded-full
+                text-center
+              "
+            >
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Email */}
@@ -61,7 +99,15 @@ function FacultyCard({ faculty }) {
 
         <a
           href={`mailto:${faculty.email}`}
-          className="text-blue-800 font-semibold hover:underline text-sm break-all text-center"
+          className="
+          text-blue-800
+          font-semibold
+          hover:underline
+          text-sm
+          break-all
+          text-center
+          max-w-full
+          "
         >
           {faculty.email}
         </a>
@@ -73,8 +119,21 @@ function FacultyCard({ faculty }) {
           href={faculty.homepage}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-3 bg-blue-800 hover:bg-blue-900 text-white py-4 rounded-2xl transition duration-300 font-semibold"
-        >
+          className="
+          flex
+          items-center
+          justify-center
+          gap-3
+          bg-blue-800
+          hover:bg-blue-900
+          text-white
+          py-3
+          sm:py-4
+          rounded-2xl
+          transition
+          duration-300
+          font-semibold
+          ">
           <ExternalLink size={20} />
           Homepage
         </a>

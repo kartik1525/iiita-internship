@@ -34,7 +34,7 @@ function FacultySection() {
       id="faculty"
       className="py-24 bg-gradient-to-b from-white to-blue-50"
     >
-      <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-12">
 
         <SectionTitle
           title="Faculty Coordinators"
@@ -48,7 +48,7 @@ function FacultySection() {
             md:flex-wrap
             overflow-x-auto
             md:overflow-visible
-            gap-4
+            gap-3
             justify-start
             md:justify-center
             pb-4
@@ -62,7 +62,8 @@ function FacultySection() {
               onClick={() => setActiveDepartment(dept.id)}
               className={`
                 whitespace-nowrap
-                px-8
+                px-6
+                md:px-8
                 py-3
                 rounded-full
                 border
@@ -83,7 +84,7 @@ function FacultySection() {
         </div>
 
         {/* Faculty Grid */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
           {filteredFaculty.length > 0 ? (
             filteredFaculty.map((faculty) => (

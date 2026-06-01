@@ -10,23 +10,23 @@ function Navbar() {
       
       <div className="max-w-[1500px] mx-auto px-8 lg:px-12">
 
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between py-3 md:h-20">
 
           {/* Logo Section */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 flex-1 min-w-0">
 
             <img
               src="/logo.png"
               alt="IIITA Logo"
-              className="w-12 h-12 object-contain"
+              className="w-10 h-10 md:w-12 md:h-12 object-contain flex-shrink-0"
             />
 
-            <div>
-              <h1 className="text-lg md:text-xl font-bold text-blue-950 leading-tight">
+            <div className="min-w-0">
+              <h1 className="text-base md:text-xl font-bold text-blue-950 leading-tight">
                 Indian Institute of Information Technology Allahabad
               </h1>
 
-              <p className="text-sm text-gray-600">
+              <p className="text-xs md:text-sm text-gray-600 mt-1">
                 Internship & Credit Export Program 2026
               </p>
             </div>
@@ -88,7 +88,7 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden ml-3 flex-shrink-0"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}
