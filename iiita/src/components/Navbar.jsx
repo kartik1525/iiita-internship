@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-[1500px] mx-auto px-8 lg:px-12">
         
         <div className="flex items-center justify-between h-20">
           
