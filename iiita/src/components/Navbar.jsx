@@ -6,14 +6,14 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-      
-      <div className="max-w-[1500px] mx-auto px-8 lg:px-12">
+    <nav className="w-full fixed top-0 left-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-12">
 
         <div className="flex items-center justify-between py-3 md:h-20">
 
           {/* Logo Section */}
-          <div className="flex items-center gap-3 flex-1 min-w-0">
+          <div className="flex items-center gap-3 max-w-[80%] md:max-w-none">
 
             <img
               src="/logo.png"
@@ -21,12 +21,12 @@ function Navbar() {
               className="w-10 h-10 md:w-12 md:h-12 object-contain flex-shrink-0"
             />
 
-            <div className="min-w-0">
-              <h1 className="text-base md:text-xl font-bold text-blue-950 leading-tight">
+            <div>
+              <h1 className="text-sm sm:text-base md:text-xl font-bold text-blue-950 leading-tight">
                 Indian Institute of Information Technology Allahabad
               </h1>
 
-              <p className="text-xs md:text-sm text-gray-600 mt-1">
+              <p className="text-[11px] sm:text-xs md:text-sm text-gray-600">
                 Internship & Credit Export Program 2026
               </p>
             </div>
@@ -38,7 +38,7 @@ function Navbar() {
 
             <HashLink
               smooth
-              to="/#"
+              to="/"
               className="hover:text-blue-900 transition"
             >
               Home
@@ -88,21 +88,21 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden ml-3 flex-shrink-0"
+            className="md:hidden flex-shrink-0 ml-2"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X /> : <Menu />}
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
 
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden pb-6 flex flex-col gap-4 text-gray-700 font-medium">
+          <div className="md:hidden pb-6 pt-2 flex flex-col gap-4 text-gray-700 font-medium border-t">
 
             <HashLink
               smooth
-              to="/#"
+              to="/"
               onClick={() => setIsOpen(false)}
             >
               Home
