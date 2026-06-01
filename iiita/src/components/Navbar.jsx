@@ -38,7 +38,7 @@ function Navbar() {
 
             <HashLink
               smooth
-              to="/"
+              to="/#"
               className="hover:text-blue-900 transition"
             >
               Home
@@ -102,7 +102,7 @@ function Navbar() {
 
             <HashLink
               smooth
-              to="/"
+              to="/#"
               onClick={() => setIsOpen(false)}
             >
               Home
