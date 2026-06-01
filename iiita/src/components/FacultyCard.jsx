@@ -76,7 +76,7 @@ function FacultyCard({ faculty }) {
           className="flex items-center justify-center gap-3 bg-blue-800 hover:bg-blue-900 text-white py-4 rounded-2xl transition duration-300 font-semibold"
         >
           <ExternalLink size={20} />
-          Personal Homepage
+          Homepage
         </a>
       </div>
     </motion.div>
