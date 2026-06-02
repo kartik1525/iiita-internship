@@ -15,7 +15,7 @@ const facultyData = [
     image: "/faculty/pritish.jpg",
     researchInterests: ["Systems Biology", "Computational Biology", "Next Gen Sequencing Algorithms","Genomic Big Data Analytics"],
     email: "pritish@iiita.ac.in",
-    homepage: "https://profile.iiita.ac.in/pritish/",
+    homepage: "https://iiita.irins.org/profile/102924",
   },
   {
     id: 3,
@@ -727,7 +727,7 @@ const facultyData = [
       "Computational Science"
     ],
     email: "anshu@iiita.ac.in",
-    homepage: "#https://sites.google.com/view/anshusanand/",
+    homepage: "https://sites.google.com/view/anshusanand/home",
   },
 
   {
@@ -800,7 +800,7 @@ const facultyData = [
       "Swarm Intelligence Techniques"
     ],
     email: "gauravs@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=gauravs",
   },
 
   {
@@ -877,7 +877,7 @@ const facultyData = [
       "Security Analysis"
     ],
     email: "ranjitsingh@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://iiita.irins.org/profile/102978",
   },
 
   {
@@ -906,7 +906,7 @@ const facultyData = [
       "Investment Management"
     ],
     email: "shailendrak@iiita.ac.in",
-    homepage: "https://scholar.google.com/citations?user=yC6QT14AAAAJ&hl=en",
+    homepage: "https://mba.iiita.ac.in/#faculty-detail?id=3",
   },
 
   {
@@ -978,7 +978,7 @@ const facultyData = [
       "Investments"
     ],
     email: "utkarsh@iiita.ac.in",
-    homepage: "https://scholar.google.com/citations?user=OfNqiAkAAAAJ&hl=en",
+    homepage: "https://mba.iiita.ac.in/#faculty-detail?id=2",
   },
 
   {
@@ -993,8 +993,85 @@ const facultyData = [
       "Financial Econometrics",
     ],
     email: "sudipta.das@iiita.ac.in",
-    homepage: "#",
+    homepage: "https://iiita.irins.org/profile/102971",
   },
+  {
+  id: 312,
+  department: "IT",
+  name: "Dr. Jayasree Sengupta",
+  image: "/faculty/jayasree.jpg",
+  researchInterests: [
+    "Network Security",
+    "Applied Cryptography",
+    "Blockchains",
+    "Data Privacy",
+    "Post Quantum Cryptography",
+    "Edge/Fog Computing",
+    "Internet of Things"
+  ],
+  email: "jayasree@iiita.ac.in",
+  homepage: "https://sites.google.com/view/jayasreesengupta/home",
+},
+{
+  id: 313,
+  department: "IT",
+  name: "Dr. Priyanka Kamboj",
+  image: "/faculty/pkamboj.jpg",
+  researchInterests: [
+    "Software Defined Networking",
+    "Internet of Things",
+    "Blockchain",
+    "Process Mining",
+    "Formal Methods and Verification"
+  ],
+  email: "pkamboj@iiita.ac.in",
+  homepage: "https://it.iiita.ac.in/?pg=facultypage&uid=pkamboj",
+},
+{
+  id: 314,
+  department: "IT",
+  name: "Dr. Nikhilanand Arya",
+  image: "/faculty/narya.jpg",
+  researchInterests: [
+    "Computational Biology and Health Care",
+    "Machine Learning",
+    "Deep Learning"
+  ],
+  email: "narya@iiita.ac.in",
+  homepage: "https://nikhilaryan92.github.io/nikhilanand_arya/",
+},
+{
+  id: 315,
+  department: "IT",
+  name: "Dr. Amit Kumar",
+  image: "/faculty/amitkumar.jpg",
+  researchInterests: [
+    "Natural Language Processing",
+    "Multimodal Learning",
+    "Generative AI",
+    "Artificial Intelligence",
+    "Quantum Computing"
+  ],
+  email: "amitkumar@iiita.ac.in",
+  homepage: "https://amit0018.github.io/portfolio/",
+},
+{
+  id: 316,
+  department: "IT",
+  name: "Dr. Kesav Ram Kaza",
+  image: "/faculty/krkaza.jpg",
+  researchInterests: [
+    "Sequential Decision Making Under Uncertainty",
+    "Reinforcement Learning",
+    "Stochastic Control",
+    "Optimization",
+    "Cyber-Physical Systems",
+    "Robotics",
+    "UAV Applications"
+  ],
+  email: "krkaza@iiita.ac.in",
+  homepage: "https://sites.google.com/view/kesavkaza/",
+},
 ]
 
 export default facultyData

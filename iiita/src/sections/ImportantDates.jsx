@@ -8,7 +8,7 @@ const dates = [
   },
   {
     title: "Last Date of Application Submission & Fee Deposit",
-    date: "25/05/2026",
+    date: "02/06/2026",
   },
   {
     title: "Starting Date of ONLINE Summer Internship (6–8 Weeks)",

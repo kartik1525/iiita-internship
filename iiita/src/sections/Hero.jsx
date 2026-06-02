@@ -34,19 +34,14 @@ function Hero() {
 
             {/* Apply Button */}
             <a
-              href="/#apply"
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSegDPoIGlpwdCNy2shzP52Bqf4xJygqR7cSsgNn0kRTeQN_vg/viewform?pli=1"
               className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-2xl transition shadow-lg"
             >
               Apply Now
             </a>
 
-            {/* Explore Programs Button */}
-            <a
-              href="/#programs"
-              className="border border-blue-900 text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-2xl transition"
-            >
-              Explore Programs
-            </a>
+          
 
           </div>
         </motion.div>

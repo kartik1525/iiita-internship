@@ -78,7 +78,8 @@ function Navbar() {
 
             <HashLink
               smooth
-              to="/#apply"
+              to="https://docs.google.com/forms/d/e/1FAIpQLSegDPoIGlpwdCNy2shzP52Bqf4xJygqR7cSsgNn0kRTeQN_vg/viewform?pli=1"
+              target="_blank"
               className="bg-blue-900 hover:bg-blue-800 text-white px-5 py-2 rounded-xl transition"
             >
               Apply Now

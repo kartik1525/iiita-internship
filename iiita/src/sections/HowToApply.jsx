@@ -8,16 +8,16 @@ const steps = [
   {
     title: "Online Registration",
   },
-  {
-    title: "Registration Fee",
-    description:
-      "The registration fee should be deposited during filling-up the registration form only.",
-  },
-  {
-    title: "Upload Documents",
-    description:
-      "Students must upload a bonafide student certificate from their parent institute on institute’s letterhead during filling-up of the application form.",
-  },
+  // {
+  //   title: "Registration Fee",
+  //   description:
+  //     "The registration fee should be deposited during filling-up the registration form only.",
+  // },
+  // {
+  //   title: "Upload Documents",
+  //   description:
+  //     "Students must upload a bonafide student certificate from their parent institute on institute’s letterhead during filling-up of the application form.",
+  // },
   {
     title: "Accommodation",
     description:
@@ -82,8 +82,7 @@ function HowToApply() {
                           members, the applicants are advised to visit the
                           individual Academic Department's{" "}
                           <a
-                              href="https://www.iiita.ac.in/"
-                              target="_blank"
+                              href="/#faculty"
                               rel="noopener noreferrer"
                               className="
                                 inline-flex
@@ -98,7 +97,7 @@ function HowToApply() {
                                 transition
                               "
                             >
-                            website
+                            Here
                           </a>
                         </p>
                       ) : index === 1 ? (
@@ -124,7 +123,7 @@ function HowToApply() {
                                 transition
                               "
                             >
-                              here
+                              Here
                             </a>
                           </p>
                       ) : (
