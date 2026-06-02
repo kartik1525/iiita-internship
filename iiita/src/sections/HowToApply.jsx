@@ -1,41 +1,32 @@
 import { motion } from "framer-motion"
 import SectionTitle from "../components/SectionTitle"
-import { Link } from "react-router-dom"
 
 const steps = [
   {
     title: "Contact Faculty Member",
-    description:
-      "Students should directly contact the faculty member through email. Applicants are advised to visit the respective academic department website for faculty details.",
-    button: "Faculty Details",
-    link: "<website-link>",
   },
   {
     title: "Online Registration",
-    description:
-      "After receiving consent from the prospective supervisor, students are required to register online along with the supervisor's consent.",
-    button: "Application Form",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSegDPoIGlpwdCNy2shzP52Bqf4xJygqR7cSsgNn0kRTeQN_vg/viewform",
   },
   {
     title: "Registration Fee",
     description:
-      "The registration fee must be deposited during the submission of the registration form.",
+      "The registration fee should be deposited during filling-up the registration form only.",
   },
   {
     title: "Upload Documents",
     description:
-      "Students must upload a bonafide student certificate from their parent institute on the institute letterhead while filling out the application form.",
+      "Students must upload a bonafide student certificate from their parent institute on institute’s letterhead during filling-up of the application form.",
   },
   {
     title: "Accommodation",
     description:
-      "IIIT Allahabad provides hostel accommodation for interns opting for physical mode. Students may also arrange accommodation outside the campus at their own responsibility.",
+      "IIIT-A provides accommodation to the interns in the hostels of the IIIT-A Campus who want to do internship in physical mode. However, one can do the internship in physical mode by arranging lodging/boarding on their own outside the campus. Institute shall not be responsible for the same.",
   },
   {
     title: "Fee Refund Policy",
     description:
-      "If a student is unable to join after registration, refund of the registration fee will be admissible after deduction of 30% plus applicable service charges as per institute rules.",
+      "If a student is unable to join the internship program after being duly registered, refund of the registration fee will be admissible after deduction of 30% + service charges as applicable. Other fee/charges will also be reimbursed as per Institute rules.",
   },
 ]
 
@@ -67,8 +58,10 @@ function HowToApply() {
                 key={index}
                 className="border border-gray-100 rounded-2xl p-5 sm:p-6 hover:shadow-md transition duration-300"
               >
+
                 <div className="flex flex-col sm:flex-row items-start gap-5">
-                  {/* Number */}
+
+                  {/* Step Number */}
                   <div className="min-w-[55px] h-[55px] rounded-full bg-blue-900 text-white flex items-center justify-center text-lg font-bold">
                     {index + 1}
                   </div>
@@ -80,33 +73,70 @@ function HowToApply() {
                       {step.title}
                     </h3>
 
-                    <p className="text-gray-600 leading-relaxed">
-                      {step.description}
-                    </p>
+                    <div className="text-gray-600 leading-relaxed">
 
-                    {step.button && (
-                      step.button === "Faculty Details" ? (
-                        <Link
-                          to="/faculty"
-                          className="inline-flex justify-center items-center mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition w-full sm:w-fit"
-                        >
-                          {step.button}
-                        </Link>
+                      {index === 0 ? (
+                        <p>
+                          Students should directly contact to the faculty member
+                          through email on their email id. For details of faculty
+                          members, the applicants are advised to visit the
+                          individual Academic Department's{" "}
+                          <a
+                              href="https://www.iiita.ac.in/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="
+                                inline-flex
+                                items-center
+                                bg-blue-900
+                                text-white
+                                px-3
+                                py-1
+                                rounded-lg
+                                ml-1
+                                hover:bg-blue-800
+                                transition
+                              "
+                            >
+                            website
+                          </a>
+                        </p>
+                      ) : index === 1 ? (
+                        <p>
+                            After getting the consent from the prospective supervisor, students are
+                            required to register online along with the consent of the Supervisor.
+                            The link of the Application Format is available{" "}
+
+                            <a
+                              href="https://docs.google.com/forms/d/e/1FAIpQLSegDPoIGlpwdCNy2shzP52Bqf4xJygqR7cSsgNn0kRTeQN_vg/viewform"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="
+                                inline-flex
+                                items-center
+                                bg-blue-900
+                                text-white
+                                px-3
+                                py-1
+                                rounded-lg
+                                ml-1
+                                hover:bg-blue-800
+                                transition
+                              "
+                            >
+                              here
+                            </a>
+                          </p>
                       ) : (
-                        <a
-                          href={step.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex justify-center items-center mt-5 bg-blue-900 hover:bg-blue-800 text-white px-6 py-3 rounded-xl transition w-full sm:w-fit"
-                        >
-                          {step.button}
-                        </a>
-                      )
-                    )}
+                        <p>{step.description}</p>
+                      )}
+
+                    </div>
 
                   </div>
 
                 </div>
+
               </div>
             ))}
 

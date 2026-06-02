@@ -94,7 +94,7 @@ function Programs() {
               className="text-white font-semibold underline underline-offset-4 hover:text-blue-200 transition"
             >
               IIITA Academic Calendar
-            </a>.
+            </a>
           </p>
 
           <p className="text-lg md:text-xl leading-relaxed">

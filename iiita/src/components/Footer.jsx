@@ -123,7 +123,7 @@ function Footer() {
         {/* Bottom */}
         <div className="border-t border-blue-900 mt-16 pt-8 text-center text-blue-200">
 
-          © 2026 Indian Institute of Information Technology Allahabad.
+          © Indian Institute of Information Technology Allahabad.
           All Rights Reserved.
 
         </div>
