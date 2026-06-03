@@ -38,11 +38,6 @@ function FacultySection() {
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Faculty Details
           </h2>
-
-          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
-            Explore faculty members, associated with IIITA Internship and Credit
-            Export Program.
-          </p>
         </div>
 
         {/* Department Filter Buttons */}
