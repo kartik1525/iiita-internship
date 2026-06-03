@@ -1,7 +1,6 @@
-import { useState } from "react"
-import FacultyCard from "../components/FacultyCard"
-import facultyData from "../data/facultyData"
-import SectionTitle from "../components/SectionTitle"
+import { useState } from "react";
+import FacultyCard from "../components/FacultyCard";
+import facultyData from "../data/facultyData";
 
 const departments = [
   {
@@ -20,14 +19,14 @@ const departments = [
     id: "AS",
     label: "Applied Science",
   },
-]
+];
 
 function FacultySection() {
-  const [activeDepartment, setActiveDepartment] = useState("IT")
+  const [activeDepartment, setActiveDepartment] = useState("IT");
 
   const filteredFaculty = facultyData.filter(
-    (faculty) => faculty.department === activeDepartment
-  )
+    (faculty) => faculty.department === activeDepartment,
+  );
 
   return (
     <section
@@ -35,11 +34,16 @@ function FacultySection() {
       className="py-24 bg-gradient-to-b from-white to-blue-50"
     >
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            Faculty Details
+          </h2>
 
-        <SectionTitle
-          title="Faculty Coordinators"
-          subtitle="Explore faculty members, research supervisors, and academic coordinators associated with the Internship and Credit Export Program."
-        />
+          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
+            Explore faculty members, associated with IIITA Internship and Credit
+            Export Program.
+          </p>
+        </div>
 
         {/* Department Filter Buttons */}
         <div
@@ -85,13 +89,9 @@ function FacultySection() {
 
         {/* Faculty Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-
           {filteredFaculty.length > 0 ? (
             filteredFaculty.map((faculty) => (
-              <FacultyCard
-                key={faculty.id}
-                faculty={faculty}
-              />
+              <FacultyCard key={faculty.id} faculty={faculty} />
             ))
           ) : (
             <div className="col-span-full text-center py-20">
@@ -100,12 +100,10 @@ function FacultySection() {
               </h3>
             </div>
           )}
-
         </div>
-
       </div>
     </section>
-  )
+  );
 }
 
-export default FacultySection
+export default FacultySection;
