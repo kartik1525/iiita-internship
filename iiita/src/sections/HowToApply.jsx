@@ -3,7 +3,7 @@ import SectionTitle from "../components/SectionTitle"
 
 const steps = [
   {
-    title: "Contact Faculty Member",
+    title: "Contact Faculty Members",
   },
   {
     title: "Online Registration",
