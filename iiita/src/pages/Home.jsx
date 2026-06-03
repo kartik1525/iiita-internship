@@ -7,27 +7,25 @@ import HowToApply from "../sections/HowToApply"
 import ImportantDates from "../sections/ImportantDates"
 
 function Home() {
-  const deadline = new Date("2026-06-01T23:59:59")
-  const isInternshipClosed = new Date() > deadline
+  const isInternshipClosed = new Date() >= new Date(2026, 5, 2)
 
   return (
     <div className="overflow-x-hidden">
       <Navbar />
 
- 
+      <main className="pt-20">
+        {isInternshipClosed && (
+          <div className="bg-red-600 text-white text-center px-5 py-8 font-bold text-lg md:text-xl shadow-lg animate-pulse">
+            🚫 INTERNSHIP APPLICATIONS ARE CLOSED NOW 🚫
+          </div>
+        )}
 
-      <Hero />
-         {isInternshipClosed && (
-  <div className="bg-gradient-to-r from-red-600 to-red-500 text-white py-3 shadow-md">
-    <div className="max-w-7xl mx-auto px-6 text-center font-semibold text-lg animate-pulse">
-      🚫 Internship Applications are Closed Now. Thank you for your interest.
-    </div>
-  </div>
-)}
-      <Programs />
-      <HowToApply />
-      <ImportantDates />
-      <Footer />
+        <Hero />
+        <Programs />
+        <HowToApply />
+        <ImportantDates />
+        <Footer />
+      </main>
     </div>
   )
 }
