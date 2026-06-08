@@ -1072,6 +1072,16 @@ const facultyData = [
   email: "krkaza@iiita.ac.in",
   homepage: "https://sites.google.com/view/kesavkaza/",
 },
+
+{
+  id: 317,
+  department: "ECE",
+  name : "Dr. Kirtan Gopal Panda",
+  image : "/faculty/kirtan.jfif",
+  researchInterests : ["UAV assisted Network", "5G/6G Network","Wireless Sensor Network", "Control Theory"],
+  email : "kgpanda@iiita.ac.in",
+  homepage: "https://sites.google.com/view/kirtangopalpanda/home"
+}
 ]
 
 export default facultyData

@@ -15,8 +15,8 @@ function Home() {
 
       <main className="pt-20">
         {isInternshipClosed && (
-          <div className="bg-red-600 text-white text-center px-5 py-8 font-bold text-lg md:text-xl shadow-lg animate-pulse">
-            🚫 INTERNSHIP APPLICATIONS FOR SUMMER 2026 ARE CLOSED NOW 🚫
+          <div className="bg-red-600 text-white text-center px-5 py-4 font-bold text-lg md:text-xl shadow-lg animate-pulse">
+            🚫 INTERNSHIP APPLICATIONS FOR SUMMER 2026 ARE CLOSED NOW 🚫 <p>✅ Winter Internship applications will open in mid-October 2026.</p>
           </div>
         )}
 

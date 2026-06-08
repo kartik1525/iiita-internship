@@ -123,8 +123,7 @@ function Footer() {
         {/* Bottom */}
         <div className="border-t border-blue-900 mt-16 pt-8 text-center text-blue-200">
 
-          © Indian Institute of Information Technology Allahabad.
-          All Rights Reserved.
+          Designed & Developed by <a href="https://bdasp.iiita.ac.in/" target="_blank">BDA Lab</a>  &nbsp;&nbsp; | &nbsp;&nbsp; © Indian Institute of Information Technology Allahabad. All Rights Reserved
 
         </div>
 

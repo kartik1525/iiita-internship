@@ -65,7 +65,7 @@ function Navbar() {
               to="/#dates"
               className="hover:text-blue-900 transition"
             >
-              Dates
+              Deadlines
             </HashLink>
 
             <HashLink
